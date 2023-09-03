@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Gabby's Cool Color Palette</title>
+</head>
+<body>
+    <h2 class="name">Gabby's Cool <br><span class="span1">Color Palette</span></h2>
+    <div class="select-panel">
+        <div class="select-btn-container">
+            <!-- Dropdown selection for color modes -->
+            <select id="color-mode" class="select-btn">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button class="fetch-btn">Get Color Scheme</button>
+        </div>
+        <div class="color-names">
+            <!-- Color names will appear here -->
+        </div>
+    </div>
+    <hr/>
+    <div id="color-palette" class="color-palette"></div>
+    <footer>
+        <h2>Gabby's Cool Colors</h2>
+        <p>Designed and executed By: Gabriel Chibueze</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
