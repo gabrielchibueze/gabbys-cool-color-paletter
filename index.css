@@ -1,0 +1,188 @@
+
+body {
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+.select-panel {
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+@font-face {
+    font-family: twista;
+    src: url("/Twister.ttf");
+}
+.name {
+    font-family: twista;
+    font-size: 40px;
+    color: blue;
+    margin: 0 auto 0 auto;
+    background-color: goldenrod;
+    background: radial-gradient(yellow, green);
+    padding: 20px 20px 20px 0px;
+}
+.span1 {
+    margin-left: 165px;
+    color: rgb(238, 13, 62);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.select-panel {
+    margin: 20px auto 5px auto;
+    width: fit-content;
+    display: flex;
+}
+.select-btn {
+    width: fit-content;
+    display: flex;
+    background-color: rgb(255, 252, 252);
+    border-radius: 5px;
+    border: 1px rgb(13, 9, 241) solid;
+}
+.fetch-btn {
+    background-color: rgba(79, 214, 61, 0.925);
+    border-radius: 5px;
+}
+.color-type {
+    height: 40px;
+    width: 60px;
+}
+button {
+    padding: 10px;
+}
+
+p {
+    cursor: pointer;
+    width: 140px;
+    text-align: left;
+    border: 1px solid rgb(231, 223, 223);
+    padding: 6px;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+p:hover {
+    background-color: rgb(213, 189, 236);
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.select-btn-conatiner {
+    position: relative;
+    display: inline-block;
+}
+.colo-names {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    border: 2px solid rgb(41, 82, 216);
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.select-btn-conatiner:hover  .colo-names {
+    display: block;
+
+}
+
+.color-palette {
+    height: 250px;
+    margin: 0 auto 0 auto;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap:  5px;
+    padding: 20px 100px;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+
+.color-palette div {
+    width: 6vw;
+    margin: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-content:space-between;
+    cursor: pointer;
+    height: 200px;
+}
+
+.color-palette div:hover {
+    background-color: burlywood;
+}
+
+.fetch-btn:hover {
+    background-color: #1fcc64;
+}
+
+footer {
+    background-color: rgb(6, 167, 6);
+    padding: 10px;
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+}
+ footer p {
+    margin: 0 auto 0 auto;
+    width: 150px;
+ }
+ select {
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+ }
+ select:hover {
+    background-color: aliceblue;
+ }
+ select option {
+    margin: 20px
+ }
+
+ .color-hex {
+    transform: rotate(90deg);
+    padding: 10px;
+    color: whitesmoke;
+ }
+
+@media (max-width: 499px) {
+
+    .name {
+        font-size: 25px;
+        padding: 10px 10px 10px 0px;
+    }
+
+     .select-panel {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
+    .select-btn-container {
+        margin-top: 10px;
+    }
+    .color-type {
+        margin: 0 auto 0 auto;
+    }
+   
+    .color-hex {
+        font-size: smaller;
+    }
+    .color-palette {
+        height: 150px;
+    }
+    
+    .color-palette div {
+        height: 150px;
+    }
+}
